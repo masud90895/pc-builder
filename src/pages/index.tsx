@@ -1,10 +1,11 @@
 import { Inter } from "next/font/google";
-
+import { ReactNode } from "react";
 import { Button } from "@nextui-org/react";
 import Head from "next/head";
 import Banner from "@/components/banner/banner";
 import RandomProduct from "@/components/RandomProduct/RandomProduct";
 import { ProductType } from "@/utilities/globalType";
+import Layout from "@/components/layout/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,5 +39,9 @@ export async function getStaticProps() {
     },
   };
 }
+
+Home.getLayout = function getLayout(page: any) {
+  return <Layout>{page}</Layout>;
+};
 
 export default Home;

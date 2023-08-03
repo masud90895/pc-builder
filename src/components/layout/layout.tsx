@@ -5,11 +5,11 @@ import Footer from "../shared/Footer/Footer";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <>
+    <div className="w-full">
       <NavbarPage />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 
