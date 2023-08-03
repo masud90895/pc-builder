@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem,
   Button,
+  Avatar,
 } from "@nextui-org/react";
 import { ChevronDown } from "../icons/icons";
 
@@ -48,7 +49,12 @@ const NavbarPage = () => {
   };
 
   return (
-    <Navbar shouldHideOnScroll isBordered>
+    <Navbar
+      shouldHideOnScroll
+      isBordered
+      className="max-w-[1920px] w-full"
+      maxWidth="full"
+    >
       <header className="bg-white w-full">
         <div className="mx-auto  px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
@@ -92,7 +98,26 @@ const NavbarPage = () => {
                   }}
                 >
                   {items?.map((item: NavbarPageProps) => (
-                    <DropdownItem key={item?.key}>{item?.key}</DropdownItem>
+                    <DropdownItem key={item?.key}>
+                      <Link
+                        className="w-full"
+                        href={`${item?.key
+                          .toLowerCase()
+                          .split(/[\s_]+/)
+                          .map((word, index) => {
+                            if (index === 0) {
+                              return word;
+                            } else {
+                              return (
+                                word.charAt(0).toUpperCase() + word.slice(1)
+                              );
+                            }
+                          })
+                          .join("")}`}
+                      >
+                        <p className="text-gray-500">{item?.key}</p>
+                      </Link>
+                    </DropdownItem>
                   ))}
                 </DropdownMenu>
               </Dropdown>
@@ -134,6 +159,34 @@ const NavbarPage = () => {
                     </svg>
                   </button>
                 </div>
+
+                <Dropdown placement="bottom-end">
+                  <NavbarItem>
+                    <DropdownTrigger>
+                      <Avatar
+                        isBordered
+                        as={Link}
+                        href="#"
+                        className="transition-transform"
+                        color="secondary"
+                        name="Jason Hughes"
+                        size="sm"
+                        src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                      />
+                    </DropdownTrigger>
+                  </NavbarItem>
+                  <DropdownMenu aria-label="Profile Actions" variant="flat">
+                    <DropdownItem key="profile" className="h-14 gap-2">
+                      <p className="font-semibold">Signed in as</p>
+                      <p className="font-semibold">zoey@example.com</p>
+                    </DropdownItem>
+                    <DropdownItem key="settings">My Build</DropdownItem>
+
+                    <DropdownItem key="logout" color="danger">
+                      Log Out
+                    </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
               </div>
             </div>
           </div>
