@@ -53,7 +53,7 @@ const NavbarPage = () => {
     <Navbar
       shouldHideOnScroll
       isBordered
-      className="max-w-[1920px] w-full bg-[#ffffff]"
+      className="max-w-[1920px] w-full bg-[#ffffff] px-2 md:px-6"
       maxWidth="full"
     >
       <header className="bg-[#ffffff] w-full">

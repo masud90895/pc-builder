@@ -22,7 +22,7 @@ const Banner = () => {
           <div className="mt-8 flex flex-wrap gap-4 text-center">
             <Link href="/build">
               <Button className="block w-full rounded bg-[#ce24b4] px-12  text-sm font-medium text-white shadow hover:bg-[#e405c2] focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
-                Get Started
+                Let&apos;s Build
               </Button>
             </Link>
 
