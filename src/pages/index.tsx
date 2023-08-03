@@ -16,7 +16,7 @@ const Home = ({ randomProduct }: { randomProduct: ProductType[] }) => {
         <title>Pc Builder</title>
         <link
           rel="icon"
-          href="https://www.pngkey.com/png/detail/212-2126131_pc-logo-computer.png"
+          href="https://i.ibb.co/W5sRzg6/a6c67360ed7472ee57ea422f578774a0-removebg-preview.png"
         />
         {/* <meta name="description" content="This is a description of my page." /> */}
       </Head>
