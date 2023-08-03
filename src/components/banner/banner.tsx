@@ -1,8 +1,10 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Banner = () => {
+  const router = useRouter();
   return (
     <section className="relative banner_image bg-cover bg-center bg-no-repeat ">
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -20,8 +22,11 @@ const Banner = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
-            <Link href="/build">
-              <Button className="block w-full rounded bg-[#ce24b4] px-12  text-sm font-medium text-white shadow hover:bg-[#e405c2] focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+            <Link passHref href="/build">
+              <Button
+                // onClick={() => router.push("/build")}
+                className="block w-full rounded bg-[#ce24b4] px-12  text-sm font-medium text-white shadow hover:bg-[#e405c2] focus:outline-none focus:ring active:bg-[#ce24b4]/75 sm:w-auto"
+              >
                 Let&apos;s Build
               </Button>
             </Link>

@@ -2,8 +2,10 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const errorPage = () => {
+  const router = useRouter();
   return (
     <div className="bg-white">
       <div className="flex items-center justify-center ">
@@ -33,11 +35,13 @@ const errorPage = () => {
               <br />
               No signal here! we cannot find the page you are looking for{" "}
             </p>
-            <Link href="/">
-              <Button className="mx-4 h-10 w-44 border rounded-md text-white text-base  bg-[#ce24b4] hover:bg-[#fa07d5] focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[#43efb9]">
-                Go Back
-              </Button>
-            </Link>
+
+            <Button
+              onClick={() => router.push("/")}
+              className="mx-4 h-10 w-44 border rounded-md text-white text-base  bg-[#ce24b4] hover:bg-[#fa07d5] focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-[#43efb9]"
+            >
+              Go Back
+            </Button>
           </div>
         </div>
       </div>

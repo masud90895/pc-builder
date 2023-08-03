@@ -14,6 +14,8 @@ const RandomProduct = ({ randomProduct }: RandomProductType) => {
           Featured and popular products from our range
         </p>
       </div>
+
+      <div className="my-[16px]"></div>
     </div>
   );
 };
