@@ -60,7 +60,7 @@ const NavbarPage = () => {
         <div className="mx-auto  px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">
-              <Link className="block md:flex gap-2 text-[#ce24b4]" href="/">
+              <Link className="block md:flex gap-2 text-[#ce24b4] items-center" href="/">
                 <span className="sr-only">Home</span>
                 <Image
                   src="https://i.ibb.co/W5sRzg6/a6c67360ed7472ee57ea422f578774a0-removebg-preview.png"
