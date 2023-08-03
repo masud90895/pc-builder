@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.banner_image {
+  background-image: url("../../public/assets/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
