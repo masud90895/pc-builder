@@ -9,7 +9,6 @@ import { ProductType } from "@/utilities/globalType";
 const inter = Inter({ subsets: ["latin"] });
 
 const Home = ({ randomProduct }: { randomProduct: ProductType[] }) => {
-  console.log("🚀 ~ file: index.tsx:12 ~ Home ~ randomProduct:", randomProduct);
   return (
     <div>
       <Head>
@@ -24,7 +23,7 @@ const Home = ({ randomProduct }: { randomProduct: ProductType[] }) => {
       <Banner />
       {/* banner  end */}
       {/* Random product */}
-      <RandomProduct />
+      <RandomProduct randomProduct={randomProduct} />
       {/* <RandomProduct end */}
     </div>
   );
