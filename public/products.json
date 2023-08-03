@@ -1,0 +1,39 @@
+[
+  {
+    "name": "AMD Athlon 200GE Desktop PC",
+    "category": "motherboard",
+    "status": true,
+    "price": 18999,
+    "description": "The AMD Athlon 200GE Desktop PC is a budget-friendly system with capable performance, featuring the AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon Vega 3 Graphics for everyday computing and basic graphics needs. Paired with the MSI A320M-A Pro AMD Micro-ATX Motherboard, it provides a reliable foundation. The PC includes 4GB of Netac Basic DDR4 2666MHz Desktop RAM for essential multitasking and a TEAM T-FORCE VULCAN Z 256GB SATA SSD for fast storage access. Housed in the MaxGreen 2810BG ATX Casing, this compact and functional desktop PC is an affordable option for web browsing, document processing, and basic multimedia tasks.",
+    "image": "https://m.media-amazon.com/images/I/61waT0+0wBL._AC_UF1000,1000_QL80_.jpg",
+    "features": [
+      "AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon Vega 3 Graphics",
+      "MSI A320M-A Pro AMD Micro-ATX Motherboard",
+      "4GB Netac Basic DDR4 2666MHz Desktop RAM",
+      "TEAM T-FORCE VULCAN Z 256GB SATA SSD",
+      "MaxGreen 2810BG ATX Casing"
+    ],
+    "ratings": 4.6,
+    "reviews": [
+      {
+        "name": "Rajesh",
+        "rating": 5,
+        "comment": "Good product",
+        "date": "2020-10-10"
+      },
+      {
+        "name": "Naim",
+        "rating": 4,
+        "comment": "Osthir product",
+        "date": "2023-10-10"
+      },
+      {
+        "name": "Saju",
+        "rating": 3.5,
+        "comment": "Need Improved",
+        "date": "2023-11-02"
+      }
+    ],
+    "averageRating": 4.5
+  }
+]

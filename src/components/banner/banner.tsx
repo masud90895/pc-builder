@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -19,9 +20,11 @@ const Banner = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
-            <Button className="block w-full rounded bg-[#ce24b4] px-12  text-sm font-medium text-white shadow hover:bg-[#e405c2] focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
-              Get Started
-            </Button>
+            <Link href="/build">
+              <Button className="block w-full rounded bg-[#ce24b4] px-12  text-sm font-medium text-white shadow hover:bg-[#e405c2] focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+                Get Started
+              </Button>
+            </Link>
 
             <Button className="block w-full rounded bg-white px-12  text-sm font-medium text-[#ce24b4] shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto">
               Learn More
