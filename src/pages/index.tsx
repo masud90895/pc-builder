@@ -6,6 +6,7 @@ import Banner from "@/components/banner/banner";
 import RandomProduct from "@/components/RandomProduct/RandomProduct";
 import { ProductType } from "@/utilities/globalType";
 import Layout from "@/components/layout/layout";
+import Marque from "@/components/marque/marque";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,11 @@ const Home = ({ randomProduct }: { randomProduct: ProductType[] }) => {
       </Head>
       {/* banner  start  */}
       <Banner />
+      {/* marque start */}
+      <Marque />
+
+      {/* marque end */}
+
       {/* banner  end */}
       {/* Random product */}
       <RandomProduct randomProduct={randomProduct} />
