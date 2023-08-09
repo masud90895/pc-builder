@@ -1,6 +1,6 @@
 interface Review {
   reviewer: string;
-  time: string;
+  time: any;
   message: string;
 }
 export interface ProductType {
