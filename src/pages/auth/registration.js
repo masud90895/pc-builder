@@ -22,10 +22,6 @@ const registration = () => {
     createUserWithEmailAndPassword(data.email, data.password);
   };
 
-  //   const [user] = useAuthState(auth);
-
-  //   console.log("firebase... reg", user);
-  //   // console.log(user);
 
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:w-[1170px] lg:mx-auto mx-10 bg-purple-100">
@@ -94,7 +90,8 @@ const registration = () => {
                 }
                 aria-label="Login with Google"
                 type="button"
-                className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400 mt-5"
+
+                className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md   mt-5  text-white bg-color"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

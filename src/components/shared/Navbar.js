@@ -8,7 +8,7 @@ const Navbar = () => {
   const { data: seassion } = useSession();
 
   const { products } = useSelector((state) => state.products);
-  
+
 
   return (
     <>
@@ -16,10 +16,10 @@ const Navbar = () => {
 
       {/* 2nd */}
       <div
-        className="max-w-[1920px] w-full bg-[#ffffff] px-2 md:px-6"
+        className="max-w-[1920px] w-full bg-purple-100 px-2 md:px-6 border-b border-purple-400"
 
       >
-        <header className="bg-[#ffffff] w-full">
+        <header className="bg-purple-100 w-full">
           <div className="mx-auto  px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -96,7 +96,7 @@ const Navbar = () => {
 
                 <Link
                   href={"/pcbuilder"}
-                  className="px-8 py-3 bg-blue-500 text-white rounded-md shadow-md lg:block hidden"
+                  className="px-8 py-3 bg-color text-white rounded-md shadow-md lg:block hidden"
                 >
                   PC Builder
                 </Link>

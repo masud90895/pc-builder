@@ -4,12 +4,25 @@ import Lottie from "lottie-react";
 import reader from "../../Assets/login/login.json";
 import { useForm } from "react-hook-form";
 import { signIn } from "next-auth/react";
+import auth from "@/firebase/firebase.auth";
 import Link from "next/link";
+import {
+  Auth,
+  AuthError,
+  signInWithEmailAndPassword as firebaseSignInWithEmailAndPassword,
+  UserCredential,
+} from 'firebase/auth';
 
 const Login = () => {
   const { register, handleSubmit } = useForm();
 
-  const handleLogin = (data) => console.log(data);
+  const handleLogin = async (data) => {
+    await firebaseSignInWithEmailAndPassword(
+      auth,
+      data.email,
+      data.password
+    );
+  };
 
   return (
     <div className="flex items-center flex-col lg:flex-row-reverse lg:w-[1170px] lg:mx-auto">
@@ -67,7 +80,7 @@ const Login = () => {
             <div>
               <button
                 type="submit"
-                className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900"
+                className="w-full px-8 py-3 font-semibold rounded-md bg-purple-500 text-white"
               >
                 Sign in
               </button>
@@ -75,7 +88,7 @@ const Login = () => {
               <button
                 aria-label="Login with Google"
                 type="button"
-                className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400 mt-5"
+                className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md bg-color mt-5 text-white"
                 onClick={() =>
                   signIn("google", {
                     callbackUrl: "https://pc-builder-green-two.vercel.app",

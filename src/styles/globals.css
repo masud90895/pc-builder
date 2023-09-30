@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Tektur:wght@500;700;800;900&display=swap");
-body{
+body {
   background-color: rgb(241, 231, 250);
   font-family: "Poppins", sans-serif;
-  
+}
+
+.bg-color {
+  background-color: purple !important;
 }
 
 .banner_image {
