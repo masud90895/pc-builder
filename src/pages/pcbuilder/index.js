@@ -34,11 +34,10 @@ const PcBuilderPage = () => {
         <button
           onClick={() => buildComplete()}
           disabled={totalProduct < 5}
-          className={`${
-            totalProduct < 5
-              ? " text-black border-gray-500 border"
-              : "bg-blue-600 text-white"
-          } flex  font-Poppins font-bold px-8 py-2 rounded-lg lg:-mt-[40px]`}
+          className={`${totalProduct < 5
+            ? " text-black border-gray-500 border"
+            : "bg-[#ce24b4] text-white"
+            } flex  font-Poppins font-bold px-8 py-2 rounded-lg lg:-my-[40px]`}
         >
           Complete Build
         </button>
