@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
   return (
     <Link href={`/details/${product._id}`} >
       <div className="mt-10 w-full  ">
-        <div className="card m-2 bg-purple-100 shadow-lg slide-top hover:bg-purple-200">
+        <div className="card m-2 bg-purple-100 shadow-sm slide-top hover:bg-purple-200 border border-purple-300">
           <figure>
             <Image
               width={400}

@@ -8,6 +8,7 @@ const Navbar = () => {
   const { data: seassion } = useSession();
 
   const { products } = useSelector((state) => state.products);
+  
 
   return (
     <>
@@ -36,13 +37,13 @@ const Navbar = () => {
                 </Link>
               </div>
 
-              <div className="md:flex md:items-center md:gap-12">
+              <div className="md:flex md:items-center md:gap-12 z-50">
                 <div className="navbar-center hidden lg:flex">
                   <ul className="menu menu-horizontal px-1">
                     <li tabIndex={0}>
                       <details>
                         <summary>Categories</summary>
-                        <ul className="p-2">
+                        <ul className="p-2 ">
                           {products?.map((category) => (
                             <li key={Math.random()}>
                               <Link href={`/category/${category.category}`}>
