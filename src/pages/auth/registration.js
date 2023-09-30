@@ -89,7 +89,7 @@ const registration = () => {
               <button
                 onClick={() =>
                   signIn("google", {
-                    callbackUrl: "http://localhost:3000",
+                    callbackUrl: "https://pc-builder-green-two.vercel.app",
                   })
                 }
                 aria-label="Login with Google"

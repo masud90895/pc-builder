@@ -78,7 +78,7 @@ const Login = () => {
                 className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400 mt-5"
                 onClick={() =>
                   signIn("google", {
-                    callbackUrl: "http://localhost:3000",
+                    callbackUrl: "https://pc-builder-green-two.vercel.app",
                   })
                 }
               >
