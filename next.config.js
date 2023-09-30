@@ -13,7 +13,12 @@ const nextConfig = {
       'www.originalstorebd.com',
       'www.scan.co.uk',
       'www.techspot.com',
-      
+      'media.istockphoto.com',
+      "elements-video-cover-images-0.imgix.net",
+      "png.pngtree.com",
+      "w7.pngwing.com",
+      "upload.wikimedia.org",
+
     ],
   }
 }

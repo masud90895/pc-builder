@@ -46,8 +46,8 @@ const HomePage = ({ products, categories }) => {
       {/* Featured Products */}
       <div>
         <div className="w-full  text-center font-serif mt-2">
-          <h2 className="lg:text-6xl ext-3xl font-bold">Featured Products</h2>
-          <p className="text-center">
+          <h2 className="lg:text-6xl ext-3xl font-bold font-Poppins">Featured Products</h2>
+          <p className="text-center font-Poppins">
             Featured and popular products from our range
           </p>
         </div>
@@ -63,7 +63,7 @@ const HomePage = ({ products, categories }) => {
           Featured Category
         </h1>
         <p className="text-md">
-          Get Your Desired Product from Featured Categor
+          Get Your Desired Product from Featured Category
         </p>
         <div className="grid grid-cols-2 lg:grid-cols-6 items-center lg:flex-row lg:gap-[30px] gap-[15px] mx-3 my-[40px]">
           {allCategory}

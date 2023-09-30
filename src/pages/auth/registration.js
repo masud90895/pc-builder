@@ -28,8 +28,8 @@ const registration = () => {
   //   // console.log(user);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center lg:w-[1170px] lg:mx-auto mx-10 ">
-      <div className="flex flex-col w-full p-6 rounded-md sm:p-10 justify-center items-center  bg-gray-50 shadow-sm ">
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:w-[1170px] lg:mx-auto mx-10 bg-purple-100">
+      <div className="flex flex-col w-full p-6 rounded-md sm:p-10 justify-center items-center   shadow-sm ">
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-bold">Registration</h1>
           <p className="text-sm ">Registration to get your account</p>
@@ -81,7 +81,7 @@ const registration = () => {
             <div>
               <button
                 type="submit"
-                className="w-full px-8 py-3 font-semibold rounded-md dark:bg-orange-300 dark:text-gray-900"
+                className="w-full px-8 py-3 font-semibold rounded-md   dark:text-gray-900 border bg-purple-500 text-white"
               >
                 Registration
               </button>
