@@ -9,10 +9,6 @@ const Marque = () => {
           online activities are open and operational.</p>
         <p className="mx-[20px]"> 10 আগস্ট বৃহস্পতিবার, আমাদের সমস্ত আউটলেট খোলা আছে। উপরন্তু, আমাদের
           অনলাইন কার্যক্রম উন্মুক্ত এবং কর্মক্ষম।</p>
-
-
-
-
       </Marquee>
     </div>
   );

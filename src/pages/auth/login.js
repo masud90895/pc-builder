@@ -12,6 +12,7 @@ import {
   signInWithEmailAndPassword as firebaseSignInWithEmailAndPassword,
   UserCredential,
 } from 'firebase/auth';
+import Swal from "sweetalert2";
 
 const Login = () => {
   const { register, handleSubmit } = useForm();

@@ -11,6 +11,7 @@ import {
   useCreateUserWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 const registration = () => {
   const [createUserWithEmailAndPassword, loading, error] =
