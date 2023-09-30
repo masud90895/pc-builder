@@ -19,7 +19,12 @@ const registration = () => {
   const { register, handleSubmit } = useForm();
 
   const handleRegister = (data) => {
-    createUserWithEmailAndPassword(data.email, data.password);
+    // createUserWithEmailAndPassword(data.email, data.password);
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Functinality Not Added',
+    })
   };
 
 

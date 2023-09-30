@@ -17,11 +17,16 @@ const Login = () => {
   const { register, handleSubmit } = useForm();
 
   const handleLogin = async (data) => {
-    await firebaseSignInWithEmailAndPassword(
-      auth,
-      data.email,
-      data.password
-    );
+    // await firebaseSignInWithEmailAndPassword(
+    //   auth,
+    //   data.email,
+    //   data.password
+    // );
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Functinality Not Added',
+    })
   };
 
   return (
